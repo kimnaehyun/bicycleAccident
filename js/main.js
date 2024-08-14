@@ -1,7 +1,7 @@
 const API_KEY = 'UFCbK3TwksFAQpY%2Bde3UPWxkPdufR8Oj5rClzytxAsXxmzPhfh%2BBTcJQdk5Ds7r8x%2FBuUytTnuFNWLUfy2ClkA%3D%3D';
 const mapDiv = document.getElementById("map");
 getData = async(year,guGun) => {
-  const url = `http://apis.data.go.kr/B552061/frequentzoneBicycle/getRestFrequentzoneBicycle?ServiceKey=${API_KEY}&searchYearCd=${year}&siDo=48&guGun=${guGun}&type=json&numOfRows=10&pageNo=1`;
+  const url = `https://apis.data.go.kr/B552061/frequentzoneBicycle/getRestFrequentzoneBicycle?ServiceKey=${API_KEY}&searchYearCd=${year}&siDo=48&guGun=${guGun}&type=json&numOfRows=10&pageNo=1`;
   const response = await fetch(url);
 const data = await response.json();
 console.log(data);
