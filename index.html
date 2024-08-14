@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+  
+</head>
+<body>
+  <h1>우리 동네 자전거 사고 내역(경상남도)</h1>
+    <select name="year" id="year">
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+    <option value="2020">2020</option>
+    <option value="2019">2019</option>
+    <option value="2018">2018</option>
+  </select>
+  <select name="guGun" id="guGun">
+    <option value="310">거제시</option>
+    <option value="880">거창군</option>
+    <option value="820">고성군</option>
+    <option value="250">김해시</option>
+    <option value="840">남해군</option>
+    <option value="160">마산시</option>
+    <option value="270">밀양시</option>
+    <option value="240">사천시</option>
+    <option value="860">산청군</option>
+    <option value="330">양산시</option>
+    <option value="720">의령군</option>
+    <option value="170">진주시</option>
+    <option value="190">진해시</option>
+    <option value="740">창녕군</option>
+    <option value="110">창원시</option>
+    <option value="125">창원시 마산합포구</option>
+    <option value="127">창원시 마산회원구</option>
+    <option value="123">창원시 성산구</option>
+    <option value="121">창원시 의창구</option>
+    <option value="129">창원시 진해구</option>
+    <option value="220">통영시</option>
+    <option value="850">하동군</option>
+    <option value="730">함안군</option>
+    <option value="870">함양군</option>
+    <option value="890">합천구</option>
+  </select>
+  <input type="button" value="확인" id="check">
+  <div id="map"></div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk6tBJhPSQryacS_KNbI1tsmuoXVyumQw&callback=initMap"></script>
+</body>
+</html>
